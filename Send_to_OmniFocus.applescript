@@ -229,7 +229,7 @@ on item_Process(selectedItems)
 		else
 			--FULL ITEM EXPORT
 			repeat with selectedItem in selectedItems
-				set theProps to (properties of selectedItem)
+				set theProps to selectedItem
 				try
 					set theAttachments to attachments of selectedItem
 					set raw_Attendees to attendees of selectedItem
